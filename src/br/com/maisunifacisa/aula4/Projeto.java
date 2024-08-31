@@ -47,10 +47,11 @@ public class Projeto {
             if(((TarefaComPrazo)tarefa).getPrazo().isBefore(this.inicio) || ((TarefaComPrazo)tarefa).getPrazo().isAfter(fim)) {
                 System.out.println("Não é possivel adicionar a tarefa");
             } else {
+                if (((Tarefa) tarefa).getStatus() == Tarefa.Status.todo) {
                 this.tarefas.add(tarefa);
             }
         } else {
-            this.tarefas.add(tarefa);
+            System.out.println("Não é possível adicionar a tarefa com status diferente de TODO.");
         }
     }
 
