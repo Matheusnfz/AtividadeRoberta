@@ -28,8 +28,6 @@ public class Main {
         System.out.println(a2.toString());
         a2.finalizar();
 
-        System.out.println("----------------------------------------");
-
 
         //Instância de tarefaComPrazo
         Executavel a3 = new TarefaComPrazo("Tarefa 3", Tarefa.Prioridade.media, LocalDate.of(2024, 11, 11));
